@@ -41,7 +41,7 @@ SYSTEMD_SETUP() {
   print_head "Configuring ${component} Service File"
   cp ${script_location}/files/${component}.service /etc/systemd/system/${component}.service &>>${LOG}
   status_check
-@@ -66,18 +57,78 @@ NODEJS() {
+NODEJS() {
   print_head "Start ${component} service "
   systemctl start ${component} &>>${LOG}
   status_check
