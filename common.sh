@@ -27,7 +27,7 @@ APP_PREREQ() {
 
   print_head "Add Application User"
   id roboshop &>>${LOG}
-@@ -46,11 +39,9 @@ NODEJS() {
+NODEJS() {
   unzip /tmp/${component}.zip &>>${LOG}
   status_check
 
