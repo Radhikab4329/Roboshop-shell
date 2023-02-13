@@ -2,7 +2,7 @@ source common.sh
 
 if [ -z "${roboshop_rabbitmq_password}" ]; then
   echo "Variable roboshop_rabbitmq_password is missing"
-  exit 1
+  exit
 fi
 
 print_head "Configuring Erlang YUM Repos"
